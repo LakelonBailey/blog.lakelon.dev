@@ -15,6 +15,8 @@ RUN pip install pipenv && pipenv install --system
 # Copy the current directory contents into the container at /app
 COPY . /app/
 
+RUN python manage.py migrate
+
 # Make port 8000 available to the world outside this container
 EXPOSE 8000
 
