@@ -30,3 +30,4 @@ __pycache__
 *.env
 reload.sh
 cronjobs
+sso-public-key
