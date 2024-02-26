@@ -21,7 +21,8 @@ else:
         os.environ['LAKELON_DEV_IP_ADDRESS'],
         'lakelon.dev',
         '.lakelon.dev',
-        'blog.lakelon.dev'
+        'blog.lakelon.dev',
+        'bloglakelondev-blog-backend-1'
     ]
 
 INSTALLED_APPS = [
