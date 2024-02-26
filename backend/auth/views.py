@@ -12,7 +12,7 @@ class AccessTokenView(View):
             'client_id': os.environ['SSO_CLIENT_ID'],
             'code': code
         }
-        print('########### IN HERE #############')
+
         response = requests.post(
             f"{os.environ['SSO_SERVICE_ENDPOINT']}/api/identity/authorize/",
             json=payload
