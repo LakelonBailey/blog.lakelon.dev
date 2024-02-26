@@ -10,6 +10,7 @@ export async function retrieveAccessToken(code) {
         window.location.replace('/');
     }
     catch {
-        showErrorPage(403);
+        return
+        // showErrorPage(403);
     }
 }
