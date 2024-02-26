@@ -6,17 +6,17 @@ load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-DEBUG = True
-
 ENVIRONMENT = os.environ.get('ENVIRONMENT', 'prod')
 if ENVIRONMENT not in ['dev', 'test', 'prod']:
     raise ValueError(f"Invalid environment: {ENVIRONMENT}")
 
-SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY = os.environ['SECRET_KEY'] =
 
 if ENVIRONMENT == 'dev':
+    DEBUG = True
     ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 else:
+    DEBUG = False
     ALLOWED_HOSTS = [
         os.environ['LAKELON_DEV_IP_ADDRESS'],
         'lakelon.dev',

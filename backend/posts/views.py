@@ -5,7 +5,7 @@ from posts.models import Post
 
 class PostsAPI(View):
 
-    def get(request: HttpRequest):
+    def get(self, request: HttpRequest):
         posts = Post.objects.all()
         return JsonResponse({
             'data': map(lambda post: {
