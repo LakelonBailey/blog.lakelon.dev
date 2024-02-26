@@ -16,7 +16,7 @@ if ENVIRONMENT == 'dev':
     DEBUG = True
     ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 else:
-    DEBUG = True
+    DEBUG = False
     ALLOWED_HOSTS = [
         os.environ['LAKELON_DEV_IP_ADDRESS'],
         'lakelon.dev',
